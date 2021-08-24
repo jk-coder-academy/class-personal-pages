@@ -4,58 +4,111 @@
   box-sizing: border-box;
 }
 body {
-  min-height: 100vh;
+  height: 100vh;
   width: 100vw;
+  background-image: url("../images/background.jpg");
+  background-position: center;
 }
 nav {
   line-height: 2.5rem;
-}nav a {
+}
+nav a {
+  font-size: 1.2rem;
   text-decoration: none;
   color: black;
-  font-size: 1.2rem;
-  margin-left: 20px;
+  padding-left: 20px;
+  transition: all .3s;
 }
 nav a:hover {
-  font-weight: bold;
+  text-shadow: 1px 1px;
 }
 .name {
-  line-height: 8rem;
+  line-height: 10rem;
 }
 .container {
   width: 90%;
-  height: calc(100% - 2.5rem - 4rem);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
   justify-content: center;
+  border-top: 2px solid #342136;
 }
-.bio img {
-  margin-bottom: 1.5rem;
+.heading, .name {
+  color: #342136;
+}
+.heading {
+  line-height: 4rem;
+  width: 100%;
+}
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bio img{ 
+  margin-bottom: 25px;
+  border-radius: 5px;
 }
 .bio-text p {
-  margin: .5rem 0;
+  margin: 8px 0;
+}
+.bio-text p::first-letter {
+  color: #342136;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 .career {
-  margin: 1rem 0 2rem;
+  width: 100%;
+  margin-bottom: 40px;
 }
-.career .heading {
-  margin-bottom: 1rem;
+.career ul {
+  margin-left: 20px;
 }
 dl dt {
   font-size: 1.1rem;
   font-weight: bolder;
+  margin: 15px 0 5px 0;
 }
 dl dd {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 footer {
-  height: 4rem;
+  height: 5rem;
   display: flex;
   justify-content: center;
+  padding-bottom: 1rem;
+  
 }
-@media screen and (min-width: 650px) {
-  .bio img {
+footer a {
+  margin: 0 10px;
+  transition: .2s;
+}
+footer a:hover {
+  transform: scale(1.1);
+}
+footer a:active {
+  transform: scale(0.8);
+}
+
+@media screen and (min-width: 600px), screen and (orientation: landscape) {
+  .container {
+    height: calc(100% - 2.5rem - 6rem);
+    max-width: 750px;
+    border-radius: 400px 15px / 35px 800px;
+    justify-content: center;
+  }
+  nav a {
+    padding-left: 100px;
+  }
+  .bio {
+    flex-direction: row;
+  }
+  .bio img{
     float: left;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-bottom: 0;
+    width: 150px;
   }
 }
