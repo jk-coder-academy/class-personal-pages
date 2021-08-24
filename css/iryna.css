@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  width: 100vw;
+}
+nav {
+  line-height: 2.5rem;
+}nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  margin-left: 20px;
+}
+nav a:hover {
+  font-weight: bold;
+}
+.name {
+  line-height: 8rem;
+}
+.container {
+  width: 90%;
+  height: calc(100% - 2.5rem - 4rem);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  justify-content: center;
+}
+.bio img {
+  margin-bottom: 1.5rem;
+}
+.bio-text p {
+  margin: .5rem 0;
+}
+.career {
+  margin: 1rem 0 2rem;
+}
+.career .heading {
+  margin-bottom: 1rem;
+}
+dl dt {
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+dl dd {
+  font-size: .9rem;
+}
+footer {
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 650px) {
+  .bio img {
+    float: left;
+  }
+}
