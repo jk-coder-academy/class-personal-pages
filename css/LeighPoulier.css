@@ -89,7 +89,7 @@ nav a {
     
 }
 
-#main {
+main {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -147,7 +147,12 @@ footer img {
 
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 #page-heading {
