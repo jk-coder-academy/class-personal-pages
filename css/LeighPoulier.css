@@ -160,6 +160,10 @@ p {
     font-weight: 300;
 }
 
+p.lorem {
+    color:grey;
+}
+
 #page-heading {
     font-size: 2.5rem;
     width: 100%;
