@@ -114,9 +114,14 @@ article {
     gap: 1rem;
 }
 
-.article-img, .article-paragraph-container {
+.article-img {
     flex-basis: 100px;
     flex-grow: 1;
+}
+
+.article-paragraph-container {
+    flex-basis: 100px;
+    flex-grow: 2;
 }
 
 .article-img {
