@@ -47,8 +47,8 @@ a{
 a:hover{
     color: orange;
     text-decoration-color:white;
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+    /* -webkit-transform: scale(1.2);
+    transform: scale(1.2); */
 }
 
 nav{
@@ -76,8 +76,8 @@ li{
     transition: .7s;
 }
 li:hover{
-    /* -webkit-transform: scale(1.2);
-    transform: scale(1.2); */
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 footer{
