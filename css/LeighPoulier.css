@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: black 1px solid; */
+}
+
+html {
+    background-color: lightsteelblue;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    min-height: 100%;
+
+      /* grid container settings */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        'header'
+        'main'
+        'footer';
+}
+
+.margin-wrapper {
+    margin: 1rem;
+}
+
+.title {
+    color: darkblue;
+}
+
+#header-margin-wrapper {
+    grid-area: header;
+
+}
+
+
+header {
+    width: 100%;
+}
+
+#header-container {
+    border-bottom-style: solid;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+
+nav li {
+    font-family: 'Roboto', sans-serif;
+    padding: 0 0.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color:black;
+    display: block;
+    padding: 0 0.5rem;
+    /* line-height: 1.5rem; */
+}
+
+#main-margin-wrapper {
+    grid-area: main;
+    overflow-y: auto;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-content: flex-start;
+}
+
+.article-flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.article-paragraph-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.article-img {
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+.article-paragraph-container {
+    flex-basis: 100px;
+    flex-grow: 2;
+}
+
+.article-img {
+    /* height: 100%; */
+    width: 100%;
+}
+
+#footer-margin-wrapper {
+    grid-area: footer;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+footer a {
+    display: block;
+
+}
+
+footer img {
+    height: 3rem;
+    display: block;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+p.lorem {
+    color:grey;
+}
+
+#page-heading {
+    font-size: 2.5rem;
+    width: 100%;
+}
+
+#my-photo {
+    display: block;
+    margin:auto;
+    width: 800px;
+}
+
+
+.links {
+
+}
+
+.container {
+
+}
+
+@media screen and (min-width: 600px) {
+    #header-container {
+        flex-direction: row;
+    }
+
+    .article-flex-container {
+        flex-direction: row;
+    }
+
+    .article-img {
+        height: 50%;
+        width: 50%;
+    }
+}
