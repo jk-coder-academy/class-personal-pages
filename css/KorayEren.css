@@ -73,7 +73,7 @@ nav{
 li{
     margin: 1%;
     display:inline-block;
-    transition: .7s;
+    /* transition: .7s; */
 }
 li:hover{
     -webkit-transform: scale(1.2);
